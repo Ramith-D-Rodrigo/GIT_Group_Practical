@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CJ - 404</title>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/cb889e4a87.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+
+    <!-- adding css -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <!-- Add Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Add js & jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <style>
+        /* html-elements */
+        
+        .bg {
+            text-align: center;
+            /* background-color: #476BD7; */
+            background-color: #BFFFF0;
+        }
+        /* .body-bg{
+  background-color: #BFFFF0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+} */
+        
+        .container-fluid {
+            /* padding: 3% 15%; */
+        }
+        /* navigation-bar */
+        
+        .navi {
+            position: fixed;
+            z-index: 10;
+            top: 25px;
+            left: 0;
+            right: 0;
+            /* color: white; */
+            /* margin: 2% 30% 0; */
+            margin-left: 30%;
+            margin-right: 30%;
+            /* background-color: blue; */
+        }
+        
+        .radius {
+            background-color: #430EBC;
+            border-radius: 20px;
+        }
+        
+        .nav-item-margin {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        /* welcome-part */
+        
+        #welcome {
+            width: 100%;
+            height: 50%;
+            z-index: -1;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            font-family: 'Montserrat-bold700', sans-sans-serif;
+            padding-top: 140px;
+            text-align: center;
+            color: black;
+        }
+        
+        .welcome {
+            position: absolute;
+            /* margin-left: 50%;
+  margin-right: 50%; */
+            top: 90px;
+            left: 0;
+            right: 0;
+            font-size: 3rem;
+            font-family: 'Shadows Into Light', cursive;
+        }
+        
+        .turtoo {
+            /* margin: 5%; */
+            /* float: right; */
+        }
+        
+        .heading {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        
+        .heading-main {
+            text-align: center;
+            margin: 1% 3% 2%;
+            /* padding: 3%; */
+            border-radius: 20px;
+            font-family: 'Montserrat-bold';
+            color: black;
+            background-color: #BFFFF0;
+            /* background-color: #476BD7; */
+        }
+        
+        .heading-h1 {
+            font-size: 4rem;
+            font-family: 'Hurricane', cursive;
+            font-weight: bold;
+            /* margin: 25% 0 0; */
+            /* responsive */
+        }
+        
+        .sub-heading-h3 {
+            color: black;
+            margin-bottom: 50px;
+        }
+        /* intro part */
+        
+        #intro {
+            background-color: white;
+            /* height: 200px; */
+            text-align: center;
+            margin: 1% 3% 1%;
+            border-radius: 20px;
+            font-family: 'Montserrat-bold';
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+        
+        .salutation {
+            padding: 30px 10px 10px;
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 2.2rem;
+        }
+        
+        .profile-pic {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+        }
+        
+        .description {
+            margin-top: 20px;
+            font-family: monospace;
+            font-style: italic;
+            font-size: 1.8rem;
+        }
+        /* skills part */
+        
+        #skills-carousel {
+            background-color: white;
+            text-align: center;
+            margin: 1% 3% 1%;
+            border-radius: 20px;
+            font-family: 'Montserrat-bold';
+        }
+        
+        .carousel-image {
+            width: 400px;
+            height: 300px;
+        }
+        
+        .carousel-custom-inner {
+            padding: 2% 5% 1%;
+        }
+        
+        .custom-label-carousel {
+            /* font-family: Montserrat; */
+            margin-left: 20%;
+            margin-right: 20%;
+            padding-top: 20px;
+        }
+        
+        .carousel-label-desc {
+            font-family: Montserrat;
+            font-size: 1.1rem;
+            color: gray;
+        }
+        /* work-part */
+        
+        #work-carousel {
+            background-color: white;
+            text-align: center;
+            margin: 0.1% 3% 5%;
+            padding: 50px;
+            border-radius: 20px;
+            font-family: 'Montserrat-bold';
+        }
+        
+        .image1 {
+            width: 500px;
+            height: 375px;
+        }
+        
+        .image2 {
+            width: 200px;
+            height: 400px;
+            transform: rotateZ(-40deg);
+        }
+        
+        .image3 {
+            width: 500px;
+            height: 375px;
+        }
+        /* footer-part */
+        
+        #footer {
+            border-radius: 10px 10px 0px 0px;
+            background-color: white;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        
+        .custom-ul {
+            padding-left: 10px;
+        }
+        
+        .image-footer {
+            width: 10px;
+            height: 10px;
+            margin-left: 100%;
+        }
+        /* media-queries */
+        /* @media screen (min-width: 600px) {
+  #welcome {
+    background-color: black;
+  }
+} */
+    </style>
+
+
+
+</head>
+
+<body class="bg">
+    <!-- background="images/bg.png"> -->
+
+    <!-- <h1>Hello Charith</h1>
+    Now you started with bootstrap 5.1.3<br /> -->
+
+    <h2 class="welcome">WELCOME</h2>
+
+    <section class="navi">
+        <nav class="navbar navbar-expand-lg navbar-dark radius">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Navbar scroll</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item nav-item-margin">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item nav-item-margin">
+                            <a class="nav-link" href="#intro">About</a>
+                        </li>
+                        <li class="nav-item nav-item-margin">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item nav-item-margin">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item nav-item-margin">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="welcome">
+
+
+        <div class="heading-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="turtoo" src="images/turtle.svg" alt="">
+                    </div>
+                    <div class="col-lg-5 heading">
+                        <h1 class="heading-h1">I'm CHARITH</h1>
+                        <h3 class="sub-heading-h3">a web designer & developer . . . </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="container">
+            <h1 class="salutation">HOLAA !!</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="profile-pic" src="images/my_dp.jpg" alt="profile picture">
+                </div>
+                <div class="col-lg-8">
+                    <p class="description">
+                        i'm an android and web designer & developer who is still reading computer science degree at UCSC. Willing to take freelance projects as well as learn more...
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div id="skills">
+
+        <h2 class="salutation">SKILLS . . .</h2>
+        <section id="skills-carousel">
+            <div id="carousel-skills" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <!-- data-bs-ride="carousel" -->
+                <div class="carousel-inner carousel-custom-inner">
+
+                    <div class="carousel-item active">
+                        <!-- <img src="" alt=""> -->
+                        <img class="carousel-image" src="images/design.webp" alt="designing">
+                        <div class="d-none d-md-block custom-label-carousel">
+                            <h2>Designing</h2>
+                            <!-- description -->
+                            <p class="carousel-label-desc">I started designing through mobile applications & gradually jumped to designing web applications using #FIGMA..i'm still learning good experiences by designing. checkout my dribble account..</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <!-- <img src="" alt=""> -->
+                        <img class="carousel-image" src="images/develop.png" alt="developing">
+                        <div class="d-none d-md-block custom-label-carousel">
+                            <h2>Developing</h2>
+                            <!-- description -->
+                            <p class="carousel-label-desc">After designing i started learn to develop web applications & mobile apps using #Android studio with java ...</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <!-- <img src="" alt=""> -->
+                        <img class="carousel-image" src="images/programming.jfif" alt="programming">
+                        <div class="d-none d-md-block custom-label-carousel">
+                            <h2>Programming</h2>
+                            <!-- description -->
+                            <p class="carousel-label-desc">I started programming when I was 15 years old. I started using Pascal , java , python , c , cpp likewise.currently learning javascript for back-end developing...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-skills" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-skills" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="work">
+        <h2 class="salutation">work . . .</h2>
+    </div>
+    <section id="work-carousel">
+        <div id="carousel-work" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="1000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="image1" src="images/design-work.png" alt="my work1">
+                </div>
+                <div class="carousel-item">
+                    <img class="image2" src="images/develop-work.png" alt="my work2">
+                </div>
+                <div class="carousel-item">
+                    <img class="image3" src="images/programming-work.png" alt="my work3">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="footer" class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top container-fluid bg-dark">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"></svg>
+            </a>
+            <span class="text-muted">© 2021 charith pietersz, Inc</span>
+        </div>
+        <ul class="nav col-md-8 list-unstyled d-flex custom-ul">
+            <li>
+                <a class="text-muted" href="https://getbootstrap.com/">
+                    <svg class="bi" width="30" height="24">
+              <i class="image-footer fa-brands fa-bootstrap"></i>
+            </svg>
+                </a>
+            </li>
+            <li>
+                <a class="text-muted" href="https://twitter.com/">
+                    <svg class="bi" width="30" height="24">
+              <i class="image-footer fa-brands fa-twitter"></i>
+            </svg>
+                </a>
+            </li>
+            <li>
+                <a class="text-muted" href="https://www.facebook.com/saman.weerakkodi.965/">
+                    <svg class="bi" width="30" height="24">
+              <i class="image-footer fa-brands fa-facebook"></i>
+            </svg>
+                </a>
+            </li>
+            <li>
+                <a class="text-muted" href="https://www.instagram.com/?hl=en">
+                    <svg class="bi" width="30" height="24">
+              <i class="image-footer fa-brands fa-instagram"></i>
+            </svg>
+                </a>
+            </li>
+            <li>
+                <a class="text-muted" href="https://www.linkedin.com/in/charith-jayarangana-27bb51212/">
+                    <svg class="bi" width="30" height="24">
+              <i class="image-footer fa-brands fa-linkedin"></i>
+            </svg>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+</body>
+
+</html>
